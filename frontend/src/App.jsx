@@ -122,15 +122,15 @@ function App() {
             <h2 style={{ marginBottom: '16px', color: 'var(--text-main)' }}>Dukung Kami ☕</h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>Jika aplikasi ini membantu Anda, Anda bisa mendukung pengembangan web ini dengan scan QRIS di bawah ini (via DANA, Gopay, OVO, dll).</p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ padding: '16px', background: '#f4b304', borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
+              <div style={{ display: 'inline-block', textAlign: 'center' }}>
                 <img 
                   src={qrisImg} 
                   alt="QRIS Donasi" 
-                  style={{ width: '250px', height: '250px', objectFit: 'contain', borderRadius: '8px', background: 'white' }}
+                  style={{ width: '280px', height: 'auto', objectFit: 'contain' }}
                 />
                 <div style={{ marginTop: '16px' }}>
                   <a 
-                    href="https://saweria.co/rfaishalnr" 
+                    href="https://saweria.co/faishalnr22" 
                     target="_blank" 
                     rel="noreferrer"
                     className="btn"
