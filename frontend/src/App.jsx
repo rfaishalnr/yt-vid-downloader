@@ -122,14 +122,13 @@ function App() {
             <h2 style={{ marginBottom: '16px', color: 'var(--text-main)' }}>Dukung Kami ☕</h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>Jika aplikasi ini membantu Anda, Anda bisa mendukung pengembangan web ini dengan scan QRIS di bawah ini (via DANA, Gopay, OVO, dll).</p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ padding: '16px', background: 'white', borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
-                {/* Ganti gambar qris.png di dalam folder frontend/src/assets/ dengan QRIS asli Anda */}
+              <div style={{ padding: '16px', background: '#f4b304', borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
                 <img 
                   src={qrisImg} 
                   alt="QRIS Donasi" 
-                  style={{ width: '250px', height: '250px', objectFit: 'contain' }}
+                  style={{ width: '250px', height: '250px', objectFit: 'contain', borderRadius: '8px', background: 'white' }}
                 />
-                <p style={{ marginTop: '12px', fontWeight: 'bold', color: '#118ee9' }}>Scan dengan DANA</p>
+                <p style={{ marginTop: '12px', fontWeight: 'bold', color: '#1e293b' }}>Scan dengan DANA</p>
               </div>
             </div>
           </section>
