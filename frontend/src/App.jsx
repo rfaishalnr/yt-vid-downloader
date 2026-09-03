@@ -119,21 +119,17 @@ function App() {
 
           <section className="donation-section" style={{ textAlign: 'center', padding: '40px 20px', background: '#fff', borderTop: '1px solid var(--border-color)' }}>
             <h2 style={{ marginBottom: '16px', color: 'var(--text-main)' }}>Dukung Kami ☕</h2>
-            <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>Jika aplikasi ini membantu Anda, pertimbangkan untuk memberikan dukungan melalui Saweria!</p>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>Jika aplikasi ini membantu Anda, Anda bisa mendukung pengembangan web ini dengan scan QRIS di bawah ini (via DANA, Gopay, OVO, dll).</p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <a 
-                href="https://saweria.co/rfaishalnr" 
-                target="_blank" 
-                rel="noreferrer"
-                className="btn btn-primary"
-                style={{
-                  background: 'linear-gradient(90deg, #ff9800, #ff5722)',
-                  fontSize: '1.2rem',
-                  padding: '16px 40px'
-                }}
-              >
-                Dukung via Saweria
-              </a>
+              <div style={{ padding: '16px', background: 'white', borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
+                {/* Ganti URL gambar di bawah ini dengan URL/path ke gambar QRIS asli Anda */}
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" 
+                  alt="QRIS Donasi" 
+                  style={{ width: '250px', height: '250px', objectFit: 'contain' }}
+                />
+                <p style={{ marginTop: '12px', fontWeight: 'bold', color: '#118ee9' }}>Scan dengan DANA</p>
+              </div>
             </div>
           </section>
         </>
