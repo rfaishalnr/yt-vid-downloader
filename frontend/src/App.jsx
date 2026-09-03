@@ -147,7 +147,7 @@ function App() {
                       boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
                     }}
                   >
-                    Dukung Kami
+                    Donate
                   </a>
                 </div>
               </div>
