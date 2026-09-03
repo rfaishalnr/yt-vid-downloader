@@ -29,6 +29,7 @@ app.get('/api/info', async (req, res) => {
             noCheckCertificates: true,
             noWarnings: true,
             preferFreeFormats: true,
+            noPlaylist: true,
             addHeader: [
                 'referer:youtube.com',
                 'user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -102,7 +103,8 @@ app.get('/api/download', async (req, res) => {
         const info = await youtubedl(url, {
             dumpSingleJson: true,
             noCheckCertificates: true,
-            noWarnings: true
+            noWarnings: true,
+            noPlaylist: true
         });
 
         const title = info.title.replace(/[^\w\s]/gi, ''); // Sanitize filename
@@ -118,7 +120,8 @@ app.get('/api/download', async (req, res) => {
             format: itag,
             output: '-', // stdout
             noCheckCertificates: true,
-            noWarnings: true
+            noWarnings: true,
+            noPlaylist: true
         });
 
         subprocess.stdout.pipe(res);

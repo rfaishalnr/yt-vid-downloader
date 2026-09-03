@@ -118,8 +118,14 @@ function App() {
               <iframe 
                 src="https://saweria.co/widgets/qr?streamKey=1a8ce39336361080f99f6c3a13020b11" 
                 width="350" 
-                height="400" 
-                style={{ border: 'none', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }} 
+                height="450" 
+                style={{ 
+                  border: 'none', 
+                  borderRadius: '16px', 
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
+                  background: '#1a1a1a', /* Dark background for transparent widget */
+                  overflow: 'hidden'
+                }} 
                 title="Saweria Donation"
               ></iframe>
             </div>
