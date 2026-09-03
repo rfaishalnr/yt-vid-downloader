@@ -115,19 +115,19 @@ function App() {
             <h2 style={{ marginBottom: '16px', color: 'var(--text-main)' }}>Dukung Kami ☕</h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>Jika aplikasi ini membantu Anda, pertimbangkan untuk memberikan dukungan melalui Saweria!</p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <iframe 
-                src="https://saweria.co/widgets/qr?streamKey=1a8ce39336361080f99f6c3a13020b11" 
-                width="350" 
-                height="450" 
-                style={{ 
-                  border: 'none', 
-                  borderRadius: '16px', 
-                  boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
-                  background: '#1a1a1a', /* Dark background for transparent widget */
-                  overflow: 'hidden'
-                }} 
-                title="Saweria Donation"
-              ></iframe>
+              <a 
+                href="https://saweria.co/rfaishalnr" 
+                target="_blank" 
+                rel="noreferrer"
+                className="btn btn-primary"
+                style={{
+                  background: 'linear-gradient(90deg, #ff9800, #ff5722)',
+                  fontSize: '1.2rem',
+                  padding: '16px 40px'
+                }}
+              >
+                Dukung via Saweria
+              </a>
             </div>
           </section>
         </>

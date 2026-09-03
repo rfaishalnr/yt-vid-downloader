@@ -50,7 +50,11 @@ const DownloadForm = ({ info, url }) => {
     setIsDownloading(true);
     
     const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
-    const downloadUrl = `${backendUrl}/api/download?url=${encodeURIComponent(url)}&itag=${selectedFormat.itag}`;
+    let downloadUrl = `${backendUrl}/api/download?url=${encodeURIComponent(url)}&itag=${selectedFormat.itag}`;
+    
+    if (selectedFormat.isMp3) {
+        downloadUrl += '&type=mp3';
+    }
     
     const link = document.createElement('a');
     link.href = downloadUrl;
