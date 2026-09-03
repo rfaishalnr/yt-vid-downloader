@@ -122,13 +122,13 @@ function App() {
             <h2 style={{ marginBottom: '16px', color: 'var(--text-main)' }}>Dukung Kami ☕</h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>Jika aplikasi ini membantu Anda, Anda bisa mendukung pengembangan web ini dengan scan QRIS di bawah ini (via DANA, Gopay, OVO, dll).</p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ display: 'inline-block', textAlign: 'center' }}>
+              <div style={{ padding: '32px', background: '#f4b304', borderRadius: '24px', boxShadow: '0 10px 30px rgba(244, 179, 4, 0.3)', display: 'inline-block', textAlign: 'center' }}>
                 <img 
                   src={qrisImg} 
                   alt="QRIS Donasi" 
-                  style={{ width: '280px', height: 'auto', objectFit: 'contain' }}
+                  style={{ width: '280px', height: 'auto', objectFit: 'contain', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
                 />
-                <div style={{ marginTop: '16px' }}>
+                <div style={{ marginTop: '24px' }}>
                   <a 
                     href="https://saweria.co/faishalnr22" 
                     target="_blank" 
@@ -137,15 +137,17 @@ function App() {
                     style={{
                       background: '#1e293b',
                       color: 'white',
-                      padding: '10px 24px',
-                      borderRadius: '8px',
+                      padding: '14px 32px',
+                      borderRadius: '12px',
                       textDecoration: 'none',
                       display: 'inline-block',
                       fontWeight: 'bold',
-                      width: '100%'
+                      fontSize: '1.1rem',
+                      width: '100%',
+                      boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
                     }}
                   >
-                    Atau Donasi via Link
+                    Donate
                   </a>
                 </div>
               </div>
