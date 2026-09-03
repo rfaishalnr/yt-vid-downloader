@@ -95,20 +95,36 @@ function App() {
       </main>
 
       {!videoInfo && (
-        <section className="features">
-          <div className="feature-item">
-            <h3>Unlimited</h3>
-            <p>Save YouTube videos as much as you need - without any limits or restrictions.</p>
-          </div>
-          <div className="feature-item">
-            <h3>No Software Required</h3>
-            <p>Download directly from your browser. No need to install any heavy software.</p>
-          </div>
-          <div className="feature-item">
-            <h3>MP4 and MP3</h3>
-            <p>Save files in HD quality, easily convert YouTube videos to MP4 or MP3.</p>
-          </div>
-        </section>
+        <>
+          <section className="features">
+            <div className="feature-item">
+              <h3>Unlimited</h3>
+              <p>Save YouTube videos as much as you need - without any limits or restrictions.</p>
+            </div>
+            <div className="feature-item">
+              <h3>No Software Required</h3>
+              <p>Download directly from your browser. No need to install any heavy software.</p>
+            </div>
+            <div className="feature-item">
+              <h3>MP4 and MP3</h3>
+              <p>Save files in HD quality, easily convert YouTube videos to MP4 or MP3.</p>
+            </div>
+          </section>
+
+          <section className="donation-section" style={{ textAlign: 'center', padding: '40px 20px', background: '#fff', borderTop: '1px solid var(--border-color)' }}>
+            <h2 style={{ marginBottom: '16px', color: 'var(--text-main)' }}>Dukung Kami ☕</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>Jika aplikasi ini membantu Anda, pertimbangkan untuk memberikan dukungan melalui Saweria!</p>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <iframe 
+                src="https://saweria.co/widgets/qr?streamKey=1a8ce39336361080f99f6c3a13020b11" 
+                width="350" 
+                height="400" 
+                style={{ border: 'none', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }} 
+                title="Saweria Donation"
+              ></iframe>
+            </div>
+          </section>
+        </>
       )}
     </>
   );
