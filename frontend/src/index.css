@@ -312,3 +312,19 @@ body {
   color: var(--text-muted);
   line-height: 1.6;
 }
+
+.top-loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: var(--primary);
+  z-index: 9999;
+  animation: loadingBar 2s infinite ease-in-out;
+}
+
+@keyframes loadingBar {
+  0% { width: 0; left: 0; }
+  50% { width: 100%; left: 0; }
+  100% { width: 0; left: 100%; }
+}

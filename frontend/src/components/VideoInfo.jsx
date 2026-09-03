@@ -12,7 +12,7 @@ const VideoInfo = ({ info }) => {
 
   return (
     <div style={{position: 'relative'}}>
-      <img src={info.thumbnail} alt={info.title} />
+      <img src={info.thumbnail} alt={info.title} loading="lazy" />
       <div style={{
           position: 'absolute', 
           bottom: '8px', 

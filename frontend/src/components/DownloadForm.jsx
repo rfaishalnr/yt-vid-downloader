@@ -69,8 +69,10 @@ const DownloadForm = ({ info, url }) => {
   };
 
   return (
-    <div className="format-section">
-      <div className="format-group">
+    <>
+      {isDownloading && <div className="top-loading-bar"></div>}
+      <div className="format-section">
+        <div className="format-group">
         <h3>Video (MP4)</h3>
         <div className="resolutions">
           {videoFormats.length > 0 ? videoFormats.map((format) => (
@@ -117,6 +119,7 @@ const DownloadForm = ({ info, url }) => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 

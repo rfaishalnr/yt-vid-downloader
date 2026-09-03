@@ -46,11 +46,17 @@ function App() {
 
   return (
     <>
+      {isLoading && <div className="top-loading-bar"></div>}
       <header className="top-header">
-        <div className="logo-container">
+        <a 
+          href="#" 
+          onClick={(e) => { e.preventDefault(); window.location.reload(); }} 
+          className="logo-container" 
+          style={{ textDecoration: 'none', cursor: 'pointer' }}
+        >
           <div className="logo-icon">▶</div>
           <span>YT-Downloader</span>
-        </div>
+        </a>
       </header>
 
       <section className="hero-section">
