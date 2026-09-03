@@ -4,6 +4,7 @@ const youtubedl = require('youtube-dl-exec');
 const fs = require('fs');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid'); // Need to install uuid
+const ffmpegPath = require('ffmpeg-static');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -116,6 +117,7 @@ app.get('/api/download', async (req, res) => {
             noWarnings: true,
             noPlaylist: true,
             output: outputTemplate,
+            ffmpegLocation: ffmpegPath,
         };
 
         if (type === 'mp3') {
