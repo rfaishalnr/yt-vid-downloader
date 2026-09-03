@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import VideoInfo from './components/VideoInfo';
 import DownloadForm from './components/DownloadForm';
+import qrisImg from './assets/qris.png';
 import './index.css';
 
 function App() {
@@ -122,9 +123,9 @@ function App() {
             <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>Jika aplikasi ini membantu Anda, Anda bisa mendukung pengembangan web ini dengan scan QRIS di bawah ini (via DANA, Gopay, OVO, dll).</p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <div style={{ padding: '16px', background: 'white', borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
-                {/* Ganti URL gambar di bawah ini dengan URL/path ke gambar QRIS asli Anda */}
+                {/* Ganti gambar qris.png di dalam folder frontend/src/assets/ dengan QRIS asli Anda */}
                 <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" 
+                  src={qrisImg} 
                   alt="QRIS Donasi" 
                   style={{ width: '250px', height: '250px', objectFit: 'contain' }}
                 />
