@@ -128,7 +128,26 @@ function App() {
                   alt="QRIS Donasi" 
                   style={{ width: '250px', height: '250px', objectFit: 'contain', borderRadius: '8px', background: 'white' }}
                 />
-                <p style={{ marginTop: '12px', fontWeight: 'bold', color: '#1e293b' }}>Scan dengan DANA</p>
+                <div style={{ marginTop: '16px' }}>
+                  <a 
+                    href="https://saweria.co/rfaishalnr" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="btn"
+                    style={{
+                      background: '#1e293b',
+                      color: 'white',
+                      padding: '10px 24px',
+                      borderRadius: '8px',
+                      textDecoration: 'none',
+                      display: 'inline-block',
+                      fontWeight: 'bold',
+                      width: '100%'
+                    }}
+                  >
+                    Atau Donasi via Link
+                  </a>
+                </div>
               </div>
             </div>
           </section>
